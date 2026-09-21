@@ -1,0 +1,54 @@
+:root {
+  --paper: #F4F1EA;
+  --ink: #1F1C17;
+  --accent: #C8553D;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #16130D; --ink: #ECE6D8; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+main { max-width: 34rem; margin: 0 auto; padding: 4rem 1rem 6rem; }
+nav {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+h1 {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 0 2.5rem;
+}
+h2 {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 2.75rem 0 0.75rem;
+  color: var(--accent);
+}
+p { margin: 0 0 0.75rem; }
+a { color: var(--accent); }
+a:hover { text-decoration: none; }
+ul { list-style: none; padding: 0; margin: 0 0 2rem; }
+li { margin: 0 0 0.5rem; }
+.tagline { margin-bottom: 2.5rem; }
+footer {
+  margin-top: 4rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
